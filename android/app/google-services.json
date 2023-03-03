@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "100564297269",
+    "project_id": "webber-48d28",
+    "storage_bucket": "webber-48d28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100564297269:android:dc9092fe22b1dd8a09b37c",
+        "android_client_info": {
+          "package_name": "com.quizer.webbing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100564297269-m2u7gan2ssvobee8s8m8695jhu3ajqbr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu4-fx6pILILKLfIW-0SCLDg0FwbYCwb8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100564297269-m2u7gan2ssvobee8s8m8695jhu3ajqbr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
