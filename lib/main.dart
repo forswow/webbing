@@ -1,3 +1,6 @@
+import 'dart:io';
+
+import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -74,7 +77,7 @@ class HomePage extends StatelessWidget {
           }));
           return ref.watch(River.remotePod).when(
                 data: (url) {
-                  return url == ''
+                  return url == '' 
                       ? QuizScreen(
                           game: QuizGame(
                             questions: quiz,

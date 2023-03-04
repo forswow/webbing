@@ -1,3 +1,4 @@
+import 'package:device_info_plus/device_info_plus.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -11,6 +12,10 @@ class River {
 
   static final remotePod = FutureProvider<String>((ref) async {
     late FirebaseRemoteConfig remoteConfig;
+    final android = await DeviceInfoPlugin().androidInfo;
+    if (!android.isPhysicalDevice) {
+      return '';
+    }
     try {
       await Firebase.initializeApp();
       remoteConfig = FirebaseRemoteConfig.instance;
